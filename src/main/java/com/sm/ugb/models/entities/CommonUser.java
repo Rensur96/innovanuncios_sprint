@@ -38,6 +38,51 @@ public class CommonUser implements Serializable{
 	
 	@Column(name="cellphone")
 	private char[] cellphone;
+
+	public UsersList getUserList() {
+		return userList;
+	}
+
+	public void setUserList(UsersList userList) {
+		this.userList = userList;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public char[] getCellphone() {
+		return cellphone;
+	}
+
+	public void setCellphone(char[] cellphone) {
+		this.cellphone = cellphone;
+	}
+
+	public long getUlistUserId() {
+		return ulistUserId;
+	}
+	
 	
 	
 }
