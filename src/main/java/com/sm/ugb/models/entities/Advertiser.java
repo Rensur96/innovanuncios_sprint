@@ -5,6 +5,8 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -21,10 +23,12 @@ public class Advertiser implements Serializable{
 	
 	@OneToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name= "user_id", nullable=false)
+	
 	private UsersList userList;
 	
 	@Id
 	@Column(name="ulist_adversiter_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long ulistAdversiterId;
 	
 	@Column(name="corp_name")
