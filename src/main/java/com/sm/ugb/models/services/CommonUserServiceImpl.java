@@ -1,0 +1,41 @@
+package com.sm.ugb.models.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.jvnet.hk2.annotations.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.sm.ugb.models.entities.CommonUser;
+import com.sm.ugb.models.repository.CommonUserRepository;
+
+@Service
+public class CommonUserServiceImpl implements CommonUserService{
+
+	@Autowired
+	public CommonUserRepository repository;
+	@Override
+	public List<CommonUser> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CommonUser save(CommonUser entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<CommonUser> findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
