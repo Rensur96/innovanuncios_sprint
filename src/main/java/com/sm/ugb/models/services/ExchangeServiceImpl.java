@@ -16,26 +16,22 @@ public class ExchangeServiceImpl implements ExchangeService{
 	public ExchangeRepository repository;
 	@Override
 	public List<Exchange> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return (List<Exchange>)repository.findAll();
 	}
 
 	@Override
 	public Exchange save(Exchange entity) {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.save(entity);
 	}
 
 	@Override
 	public Optional<Exchange> findById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.findById(id);
 	}
 
 	@Override
-	public void delete(Long id) {
-		// TODO Auto-generated method stub
-		
+	public void delete(Exchange entity) {
+		repository.delete(entity);
 	}
 
 }

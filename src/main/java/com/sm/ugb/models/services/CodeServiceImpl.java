@@ -16,26 +16,21 @@ public class CodeServiceImpl implements CodeService{
 	public CodeRepository repository;
 	@Override
 	public List<Code> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return (List<Code>)repository.findAll();
 	}
 
 	@Override
 	public Code save(Code entity) {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.save(entity);
 	}
 
 	@Override
 	public Optional<Code> findById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.findById(id);
 	}
 
-	@Override
-	public void delete(Long id) {
-		// TODO Auto-generated method stub
-		
+	public void delete(Code entity) {
+		repository.delete(entity);
 	}
 
 }

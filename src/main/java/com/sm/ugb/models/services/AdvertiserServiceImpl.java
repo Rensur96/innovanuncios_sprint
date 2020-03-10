@@ -16,26 +16,21 @@ public class AdvertiserServiceImpl implements AdvertiserService{
 	public AdvertiserRepository repository;
 	@Override
 	public List<Advertiser> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return (List<Advertiser>)repository.findAll();
 	}
 
 	@Override
 	public Advertiser save(Advertiser entity) {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.save(entity);
 	}
 
 	@Override
 	public Optional<Advertiser> findById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.findById(id);
 	}
-
-	@Override
-	public void delete(Long id) {
-		// TODO Auto-generated method stub
-		
+	
+	public void delete(Advertiser entity) {
+		repository.delete(entity);
 	}
 
 }

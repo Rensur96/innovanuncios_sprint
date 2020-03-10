@@ -13,6 +13,6 @@ public interface ExchangeService {
 	
 	public Optional<Exchange> findById(Long id);
 	
-	public void delete(Long id);
+	public void delete(Exchange entity);
 	
 }

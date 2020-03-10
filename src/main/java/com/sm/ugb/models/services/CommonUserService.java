@@ -13,6 +13,6 @@ public interface CommonUserService {
 	
 	public Optional<CommonUser> findById(Long id);
 	
-	public void delete(Long id);
+	public void delete(CommonUser entity);
 	
 }
