@@ -29,8 +29,8 @@ public class CodeServiceImpl implements CodeService{
 		return repository.findById(id);
 	}
 
-	public void delete(Code entity) {
-		repository.delete(entity);
+	public void delete(Long id) {
+		repository.deleteById(id);
 	}
 
 }

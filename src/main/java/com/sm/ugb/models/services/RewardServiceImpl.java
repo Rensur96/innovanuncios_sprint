@@ -24,7 +24,7 @@ public class RewardServiceImpl {
 		return repository.findById(id);
 	}
 
-	public void delete(Reward entity) {
-	repository.delete(entity);
+	public void delete(Long id) {
+	repository.deleteById(id);
 	}
 }

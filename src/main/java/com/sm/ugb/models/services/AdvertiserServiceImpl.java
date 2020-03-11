@@ -28,9 +28,9 @@ public class AdvertiserServiceImpl implements AdvertiserService{
 	public Optional<Advertiser> findById(Long id) {
 		return repository.findById(id);
 	}
-	
-	public void delete(Advertiser entity) {
-		repository.delete(entity);
+	@Override
+	public void delete(Long id){
+		repository.deleteById(id);
 	}
 
 }

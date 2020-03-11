@@ -30,8 +30,8 @@ public class CommonUserServiceImpl implements CommonUserService{
 	}
 
 	@Override
-	public void delete(CommonUser entity) {
-		repository.delete(entity);
+	public void delete(Long id) {
+		repository.deleteById(id);
 	}
 
 }

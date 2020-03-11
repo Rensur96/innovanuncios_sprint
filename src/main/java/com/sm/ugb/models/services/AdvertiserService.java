@@ -13,6 +13,6 @@ public interface AdvertiserService {
 	
 	public Optional<Advertiser> findById(Long id);
 	
-	public void delete(Advertiser id);
+	public void delete(Long id);
 	
 }

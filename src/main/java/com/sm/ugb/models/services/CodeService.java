@@ -13,5 +13,5 @@ public interface CodeService {
 	
 	public Optional<Code> findById(Long id);
 	
-	public void delete(Code entity);
+	public void delete(Long id);
 }

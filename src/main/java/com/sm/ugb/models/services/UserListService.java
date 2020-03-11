@@ -12,5 +12,5 @@ public List<UsersList> findAll();
 	
 	public Optional<UsersList> findById(Long id);
 	
-	public void delete(UsersList entity);
+	public void delete(Long id);
 }

@@ -26,7 +26,7 @@ public class PointServiceImpl {
 		return repository.findById(id);
 	}
 
-	public void delete(Point entity) {
-	repository.delete(entity);	
+	public void delete(Long id) {
+	repository.deleteById(id);	
 	}
 }

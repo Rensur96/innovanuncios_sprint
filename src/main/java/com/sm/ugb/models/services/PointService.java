@@ -12,5 +12,5 @@ public interface PointService {
 	
 	public Optional<Point> findById(Long id);
 	
-	public void delete(Point entity);
+	public void delete(Long id);
 }

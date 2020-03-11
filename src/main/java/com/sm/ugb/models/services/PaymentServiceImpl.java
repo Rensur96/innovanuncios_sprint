@@ -27,8 +27,8 @@ public class PaymentServiceImpl {
 		return repository.findById(id);
 	}
 
-	public void delete(Payment entity) {
-	repository.delete(entity);	
+	public void delete(Long id) {
+	repository.deleteById(id);
 	}
 
 	

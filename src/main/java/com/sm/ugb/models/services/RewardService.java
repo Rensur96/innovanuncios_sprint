@@ -12,5 +12,5 @@ public List<Reward> findAll();
 	
 	public Optional<Reward> findById(Long id);
 	
-	public void delete(Reward entity);
+	public void delete(Long id);
 }

@@ -14,5 +14,5 @@ public interface PaymentService {
 	
 	public Optional<Payment> findById(Long id);
 	
-	public void delete(Payment entity);
+	public void delete(Long id);
 }

@@ -26,7 +26,7 @@ public class UserListServiceImpl {
 		return repository.findById(id);
 	}
 
-	public void delete(UsersList entity) {
-	repository.delete(entity);	
+	public void delete(Long id) {
+	repository.deleteById(id);	
 	}
 }

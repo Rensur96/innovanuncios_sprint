@@ -30,8 +30,8 @@ public class ExchangeServiceImpl implements ExchangeService{
 	}
 
 	@Override
-	public void delete(Exchange entity) {
-		repository.delete(entity);
+	public void delete(Long id) {
+		repository.deleteById(id);
 	}
 
 }
