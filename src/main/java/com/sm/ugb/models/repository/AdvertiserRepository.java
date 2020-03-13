@@ -8,4 +8,5 @@ import com.sm.ugb.models.entities.Advertiser;
 @Repository
 public interface AdvertiserRepository extends CrudRepository<Advertiser, Long> {
 
+	
 }
