@@ -31,12 +31,12 @@ public class PointController {
 	}
 	
 	@RequestMapping(path = "/u-points", method = RequestMethod.POST)
-	public Point saveUser(@RequestBody Point entity){
+	public Point regPoints(@RequestBody Point entity){
 		return (Point) pointsCtrl.save(entity);
 	}
 	
 	@RequestMapping(path = "/u-pointsDel/{id}", method = RequestMethod.GET)
-	public void deleteUser(@PathVariable("id") Long id){
+	public void deletePoints(@PathVariable("id") Long id){
 		pointsCtrl.delete(id);
 	}
 }

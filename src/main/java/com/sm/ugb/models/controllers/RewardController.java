@@ -31,12 +31,12 @@ public class RewardController {
 	}
 	
 	@RequestMapping(value="/rewards", method = RequestMethod.POST)
-	public Reward saveUser(@RequestBody Reward entity){
+	public Reward addRewards(@RequestBody Reward entity){
 		return (Reward) rewardCtrl.save(entity);
 	}
 	
 	@RequestMapping(value="/rewardsDel/{id}", method = RequestMethod.GET)
-	public void deleteUser(@PathVariable("id") Long id){
+	public void deleteReward(@PathVariable("id") Long id){
 		rewardCtrl.delete(id);
 	}
 }
