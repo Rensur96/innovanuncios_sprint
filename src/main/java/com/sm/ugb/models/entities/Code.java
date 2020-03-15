@@ -46,7 +46,7 @@ public class Code implements Serializable{
 	private Date dateEnd;
 	
 	@Column(name="isActive")
-	private boolean isActive;
+	private String isActive;
 
 	public long getCodeId() {
 		return codeId;
@@ -80,11 +80,13 @@ public class Code implements Serializable{
 		this.dateEnd = dateEnd;
 	}
 
-	public boolean isActive() {
+	
+
+	public String getIsActive() {
 		return isActive;
 	}
 
-	public void setActive(boolean isActive) {
+	public void setIsActive(String isActive) {
 		this.isActive = isActive;
 	}
 
