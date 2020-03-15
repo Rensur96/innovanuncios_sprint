@@ -19,7 +19,7 @@ public class AdvertiserController {
 	@Autowired
 	private AdvertiserService advertiserCtrl;
 		
-	@RequestMapping(path="/advertiser", method = RequestMethod.GET)
+	@RequestMapping(path="/advertisers", method = RequestMethod.GET)
 	public List<Advertiser> getList(){
 		return (List<Advertiser>) advertiserCtrl.findAll();
 	}
