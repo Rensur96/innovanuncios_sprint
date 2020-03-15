@@ -36,7 +36,7 @@ public class UserListController {
 		return (UsersList) userListCtrl.save(entity);
 	}
 	
-	@RequestMapping(value="/u-list/{id}", method = RequestMethod.GET)
+	@RequestMapping(value="/u-listDel/{id}", method = RequestMethod.GET)
 	public void deleteUser(@PathVariable("id") Long id){
 		userListCtrl.delete(id);
 	}

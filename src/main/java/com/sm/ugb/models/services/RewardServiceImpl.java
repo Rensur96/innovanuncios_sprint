@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.sm.ugb.models.entities.Reward;
 import com.sm.ugb.models.repository.RewardRepository;;
 
-public class RewardServiceImpl {
+@Service
+public class RewardServiceImpl implements RewardService{
 	@Autowired
 	public RewardRepository repository;
 	

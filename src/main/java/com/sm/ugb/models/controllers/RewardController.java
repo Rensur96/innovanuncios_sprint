@@ -35,7 +35,7 @@ public class RewardController {
 		return (Reward) rewardCtrl.save(entity);
 	}
 	
-	@RequestMapping(value="/rewards/{id}", method = RequestMethod.GET)
+	@RequestMapping(value="/rewardsDel/{id}", method = RequestMethod.GET)
 	public void deleteUser(@PathVariable("id") Long id){
 		rewardCtrl.delete(id);
 	}

@@ -10,7 +10,7 @@ import com.sm.ugb.models.entities.Payment;
 import com.sm.ugb.models.repository.PaymentRepository;
 
 @Service
-public class PaymentServiceImpl {
+public class PaymentServiceImpl implements PaymentService{
 
 	@Autowired
 	public PaymentRepository repository;

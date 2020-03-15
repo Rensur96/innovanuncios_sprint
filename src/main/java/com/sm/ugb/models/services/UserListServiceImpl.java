@@ -10,7 +10,7 @@ import com.sm.ugb.models.entities.UsersList;
 import com.sm.ugb.models.repository.UsersListRepository;
 
 @Service
-public class UserListServiceImpl {
+public class UserListServiceImpl implements UserListService{
 	@Autowired
 	public UsersListRepository repository;
 	

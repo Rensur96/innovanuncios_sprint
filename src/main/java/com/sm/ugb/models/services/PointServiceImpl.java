@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sm.ugb.models.entities.Point;
-import com.sm.ugb.models.repository.PointRepository;;
+import com.sm.ugb.models.repository.PointRepository;
 
 @Service
-public class PointServiceImpl {
+public class PointServiceImpl implements PointService {
 	@Autowired
 	public PointRepository repository;
 	

@@ -19,23 +19,23 @@ public class PointController {
 	@Autowired
 	private PointService pointsCtrl;
 		
-	@RequestMapping(value="/u-points", method = RequestMethod.GET)
+	@RequestMapping(path="/u-points", method = RequestMethod.GET)
 	public List<Point> getList(){
 		return (List<Point>) pointsCtrl.findAll();
 	}
 	
-	@RequestMapping(value="/u-points/{id}", method = RequestMethod.GET)
+	@RequestMapping(path="/u-points/{id}", method = RequestMethod.GET)
 	public Point getById(@PathVariable("id") Long id){
 		Optional<Point> result =  pointsCtrl.findById(id);
 		return result.get();
 	}
 	
-	@RequestMapping(value="/u-points", method = RequestMethod.POST)
+	@RequestMapping(path = "/u-points", method = RequestMethod.POST)
 	public Point saveUser(@RequestBody Point entity){
 		return (Point) pointsCtrl.save(entity);
 	}
 	
-	@RequestMapping(value="/u-points/{id}", method = RequestMethod.GET)
+	@RequestMapping(path = "/u-pointsDel/{id}", method = RequestMethod.GET)
 	public void deleteUser(@PathVariable("id") Long id){
 		pointsCtrl.delete(id);
 	}
