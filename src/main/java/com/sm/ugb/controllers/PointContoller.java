@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.sm.ugb.models.entities.Advertiser;
+import com.sm.ugb.models.entities.Point;
 
 public class PointContoller {
 
@@ -32,6 +33,11 @@ public class PointContoller {
 			return result.get();
 		}
 		
+		private static Optional<Point> getByid(Long id) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
 		@RequestMapping(value="/Point ", method = RequestMethod.POST)
 		public PointContoller  saveUser(@RequestBody Point entity){
 			return (PointContoller ) Point.saveUser(entity);
