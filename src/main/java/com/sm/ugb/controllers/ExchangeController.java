@@ -15,7 +15,7 @@ public class ExchangeController {
 		
 		@RequestMapping(value="/ExchangeController", method = RequestMethod.GET)
 		public List<ExchangeController> getList(){
-			return (List<ExchangeControllerr>) ExchangeControllerCtrl.findAll();
+			return (List<ExchangeController>) ExchangeControllerCtrl.findAll();
 		}
 		
 		private List<ExchangeController> findAll() {
