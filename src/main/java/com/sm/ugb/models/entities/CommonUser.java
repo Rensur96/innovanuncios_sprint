@@ -20,10 +20,10 @@ public class CommonUser implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@OneToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name= "user_id", nullable=false)
+	@JoinColumn(name= "userId", nullable=false)
 	private UsersList userList;
 	
-	@Column(name="ulist_user_id")
+	@Column(name="ulistUserId")
 	@Id
 	private long ulistUserId;
 	

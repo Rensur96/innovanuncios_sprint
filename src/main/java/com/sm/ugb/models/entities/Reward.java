@@ -24,28 +24,28 @@ public class Reward implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@Column(name="reward_id")
+	@Column(name="rewardId")
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private long rewardId;
 	
-	@Column(name="ulist_advertiser_id")
+	@Column(name="ulistAdvertiserAd")
 	private long ulistAdvertiserId;
 	
-	@Column(name="points_required")
+	@Column(name="pointsRequired")
 	private int pointsRequired;
 	
-	@Column(name="reward_name")
+	@Column(name="rewardName")
 	private String rewardName;
 	
-	@Column(name="reward_description")
+	@Column(name="rewardDescription")
 	private String rewardDescription;
 	
-	@Column(name="date_published")
+	@Column(name="datePublished")
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date datePublished;
 	
-	@Column(name="is_active")
+	@Column(name="isActive")
 	private boolean isActive;
 
 	public int getPointsRequired() {

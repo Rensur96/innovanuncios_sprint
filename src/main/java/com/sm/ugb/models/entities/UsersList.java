@@ -21,28 +21,23 @@ public class UsersList implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="user_id")
+	@Column(name="userId")
 	private long userId;
 	
 	@Column(name="user")
-	@NotEmpty
 	private String user;
 	
 	@Column(name="passwd")
-	@NotEmpty
 	private String passwd;
 	
 	@Column(name="email")
-	@NotEmpty
 	private String email;
 	
-	@Column(name="level_role")
-	@NotEmpty
+	@Column(name="levelrole")
 	private String levelRole;
 	
-	@Column(name="is_Active")
-	@NotEmpty
-	private boolean isActive;
+	@Column(name="isActive")
+	private String isActive;
 
 	//Getters & Setters
 	
@@ -86,13 +81,15 @@ public class UsersList implements Serializable{
 		this.levelRole = levelRole;
 	}
 
-	public boolean isActive() {
+	public String getIsActive() {
 		return isActive;
 	}
 
-	public void setActive(boolean isActive) {
+	public void setIsActive(String isActive) {
 		this.isActive = isActive;
 	}
+
+
 	
 	
 }

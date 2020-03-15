@@ -17,10 +17,10 @@ public class Point implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@Column(name="ulist_user_id")
+	@Column(name="ulistUserId")
 	private long ulistUserId;
 	
-	@Column(name="advertiser_id")
+	@Column(name="advertiserId")
 	private long advertiserId;
 	
 	@Column(name="points")

@@ -26,26 +26,26 @@ public class Code implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="code_id")
+	@Column(name="codeId")
 	private long codeId;
 	
-	@Column(name="adversiters_id")
+	@Column(name="adversitersId")
 	private long adversitersId;
 	
 	@Column(name="code")
 	private String code;
 	
-	@Column(name="date_start")
+	@Column(name="dateStart")
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date dateStart;
 	
-	@Column(name="date_endt")
+	@Column(name="dateEnd")
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date dateEnd;
 	
-	@Column(name="is_active")
+	@Column(name="isActive")
 	private boolean isActive;
 
 	public long getCodeId() {

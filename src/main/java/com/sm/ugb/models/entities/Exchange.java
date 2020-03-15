@@ -25,16 +25,16 @@ public class Exchange implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="exchange_id")
+	@Column(name="exchangeId")
 	private long exchangeId;
 	
-	@Column(name="code_id")
-	private long codeIde;
+	@Column(name="codeId")
+	private long codeId;
 	
-	@Column(name="user_id")
+	@Column(name="userId")
 	private long userId;
 	
-	@Column(name="reddemed_date")
+	@Column(name="reddemedDate")
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date reddemedDate;
@@ -44,7 +44,7 @@ public class Exchange implements Serializable{
 	}
 
 	public long getCodeIde() {
-		return codeIde;
+		return codeId;
 	}
 
 	public long getUserId() {

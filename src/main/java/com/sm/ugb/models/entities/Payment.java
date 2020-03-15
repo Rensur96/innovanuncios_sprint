@@ -26,21 +26,21 @@ public class Payment implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="payment_id")
+	@Column(name="paymentId")
 	private long paymentId;
 	
-	@Column(name="advertiser_id")
+	@Column(name="adversiterId")
 	private long adversiterId;
 	
 	@Column(name="amount")
 	private double amount;
 	
-	@Column(name="pay_date")
+	@Column(name="payDate")
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date payDate;
 	
-	@Column(name="address_factures")
+	@Column(name="addressFactured")
 	private String addressFactured;
 
 	public String getAddressFactured() {

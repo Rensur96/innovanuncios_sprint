@@ -23,16 +23,15 @@ public class Advertiser implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@OneToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name= "user_id", nullable=false)
-	
+	@JoinColumn(name= "userId", nullable=false)
 	private UsersList userList;
 	
 	@Id
-	@Column(name="ulist_adversiter_id")
+	@Column(name="ulistAdversiterId")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long ulistAdversiterId;
 	
-	@Column(name="corp_name")
+	@Column(name="corpName")
 	private String corpName;
 	
 	@Column(name="phone")
