@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.sm.ugb.models.entities.Code;
+
 
 public class ExchangeController {
 		private ExchangeController ExchangeControllerCtrl;
