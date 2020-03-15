@@ -2,6 +2,7 @@ package com.sm.ugb.models.entities;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Optional;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -89,5 +90,10 @@ public class Code implements Serializable{
 
 	public long getAdversitersId() {
 		return adversitersId;
+	}
+
+	public static Optional<Code> getById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

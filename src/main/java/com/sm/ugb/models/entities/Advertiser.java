@@ -1,6 +1,7 @@
 package com.sm.ugb.models.entities;
 
 import java.io.Serializable;
+import java.util.Optional;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -56,6 +57,12 @@ public class Advertiser implements Serializable{
 
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+
+	public static Optional<Advertiser> getByid(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

@@ -2,6 +2,7 @@ package com.sm.ugb.models.entities;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Optional;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -64,6 +65,16 @@ public class Payment implements Serializable{
 
 	public Date getPayDate() {
 		return payDate;
+	}
+
+	public static void deleteUser(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static Optional<Payment> getByid(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
